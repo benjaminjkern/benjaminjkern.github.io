@@ -1,4 +1,4 @@
-# [Yeehaw](benjaminjkern.github.io)
-My website yeehaw
+# [Click Here to Go to My Website](benjaminjkern.github.io)
+> (It's my portfolio website hehe)
 
 
