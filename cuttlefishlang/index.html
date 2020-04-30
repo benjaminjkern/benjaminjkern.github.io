@@ -78,7 +78,7 @@
                 <div class="col mx-5">
                     <h3>Hello, world!</h3>
                     <div class="row text-left">
-                        <div class="border rounded w-100 px-3 py-3 align-middle border-white">
+                        <div class="border rounded w-100 px-3 py-3 align-middle border-white" style="background-color:rgb(34, 34, 34)">
                             <pre><code class="text-warning">print 'Hello, World!'</code></pre>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                 <div class="col mx-5">
                     <h3>Infinite Fibonacci List</h3>
                     <div class="row text-left">
-                        <div class="border rounded w-100 px-3 py-3 border-white">
+                        <div class="border rounded w-100 px-3 py-3 border-white" style="background-color:rgb(34, 34, 34)">
                             <pre><code class="text-warning">fib = fn:
     () -> fib(1,1)
     (a,b) -> a ++ fib(b,a+b)</code></pre>
@@ -98,20 +98,19 @@
                 <div class="col mx-5">
                     <h3>Quicksort</h3>
                     <div class="row text-left">
-                        <div class="border rounded w-100 px-3 py-3 border-white">
+                        <div class="border rounded w-100 px-3 py-3 border-white" style="background-color:rgb(34, 34, 34)">
                             <pre><code class="text-warning">[Num] quickSort = fn:
     [] -> []
     [Num] x:xs ->
-        quickSort xs[fn: $  x] ++ x ++ xs[fn: $ = x]</code></pre>
+        quickSort xs[fn: $ < x] ++ x ++ xs[fn: $ >= x]</code></pre>
                         </div>
                     </div>
                 </div>
                 <div class="col mx-5">
-                    <h3>Even or Odd</h3>
+                    <h3>Yeehaw</h3>
                     <div class="row text-left">
-                        <div class="border rounded w-100 px-3 py-3 border-white">
-                            <pre><code class="text-warning">while true:
-    print 'fart'</code></pre>
+                        <div class="border rounded w-100 px-3 py-3 border-white" style="background-color:rgb(34, 34, 34)">
+                            <pre><code class="text-warning">yeehaw</code></pre>
                         </div>
                     </div>
                 </div>
@@ -160,7 +159,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Cuttlefish 2020</p>
         </div>
         <!-- /.container -->
     </footer>
