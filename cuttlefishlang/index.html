@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Ben Kern & James Crocker">
 
-    <title>Cuttlefish</title>
+    <title>Cuttlefish Programming Language</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -46,72 +46,70 @@
         </div>
     </nav>
 
-    <header id="header" class="text-white" style="background-image: url('Cuttlefish.png');background-position: center;background-size: cover;
-    background-attachment: fixed;">
-        <div class="container text-center">
-            <h1>Say hi to Cuttlefish.</h1>
-        </div>
-    </header>
+    <div style="
+    background-image: url('Cuttlefish.png');background-position: center;background-size: cover;
+    background-attachment: fixed; height:100vh; text-align:center;">
+        <h1 class="display-1" style="color: white;text-shadow: 2px 2px 2px black; 
+        position: absolute;width:100vw;
+        top: 45%;">Say hello to Cuttlefish.</h1>
+    </div>
 
     <section id="intro">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h2>About Cuttlefish</h2>
-                    <ul>
-                        <li>Cuttlefish is a strong, statically typed language designed to empower its users to write elegant, safe, and functional code for concurrent systems.</li>
-                        <li>Cuttlefish as a language structurally draws from many aspects of Haskell and Elixir, as well as stylistically from Python, with indentation based closure.</li>
-                        <li>Cuttlefish strives to allow its users to have immense power over the style of their code, as long as it is falls into what is considered clean, cohesive, "Cuttly" code.</li>
-                        <li>Cuttlefish also strives to achieve Alan Kay's ideas of ideal Object Oriented Programming which still being a functional programming language.</li>
-                    </ul>
-                    <a class="lead text-warning" href="https://github.com/benjaminjkern/cuttlefishlang">Check us out on Github!</a>
-                </div>
+            <h2>About Cuttlefish</h2>
+            <ul>
+                <li>Cuttlefish is a strong, statically typed language designed to empower its users to write elegant, safe, and functional code for concurrent systems.</li>
+                <li>Cuttlefish as a language structurally draws from many aspects of Haskell and Elixir, as well as stylistically from Python, with indentation based closure.</li>
+                <li>Cuttlefish strives to allow its users to have immense power over the style of their code, as long as it is falls into what is considered clean, cohesive, "Cuttly" code.</li>
+                <li>Cuttlefish also strives to achieve Alan Kay's ideas of ideal Object Oriented Programming which still being a functional programming language.</li>
+            </ul>
+            <div style="width:100%;text-align:center;">
+                <a class=" h2 text-warning text-center " href="https://github.com/benjaminjkern/cuttlefishlang ">Check us out on Github!</a>
             </div>
         </div>
     </section>
 
 
-    <section class="portfolio bg-dark" id="examples" style="background-image: url('Cuttlefish.png');background-position: center;background-size: cover;
-    background-attachment: fixed;">
-        <div class="container text-center text-white">
-            <h1>Code Examples</h1>
-            <div class="row my-5">
-                <div class="col mx-5">
-                    <h3>Hello, world!</h3>
-                    <div class="row text-left">
-                        <div class="border rounded w-100 px-3 py-3 align-middle border-white" style="background-color:rgb(34, 34, 34)">
-                            <pre><code class="text-warning">print 'Hello, World!'</code></pre>
+    <section class="portfolio bg-dark " id="examples" style="background-image: url( 'Cuttlefish.png');background-position: center;background-size: cover; background-attachment: fixed; ">
+        <div class="container text-center text-white " style="background-color: #ffffff00 ">
+            <h1 style="text-shadow: 2px 2px 2px black; ">Code Examples</h1>
+            <div class="row my-5 ">
+                <div class="col mx-5 ">
+                    <h3 style="text-shadow: 2px 2px 2px black; ">Hello, world!</h3>
+                    <div class="row text-left ">
+                        <div class="border rounded w-100 px-3 py-3 align-middle border-white " style="background-color:rgb(34, 34, 34) ">
+                            <pre><code class="text-warning ">print 'Hello, World!'</code></pre>
                         </div>
                     </div>
                 </div>
-                <div class="col mx-5">
-                    <h3>Infinite Fibonacci List</h3>
-                    <div class="row text-left">
-                        <div class="border rounded w-100 px-3 py-3 border-white" style="background-color:rgb(34, 34, 34)">
-                            <pre><code class="text-warning">fib = fn:
+                <div class="col mx-5 ">
+                    <h3 style="text-shadow: 2px 2px 2px black; ">Infinite Fibonacci List</h3>
+                    <div class="row text-left ">
+                        <div class="border rounded w-100 px-3 py-3 border-white " style="background-color:rgb(34, 34, 34) ">
+                            <pre><code class="text-warning ">fib = fn:
   () -> fib(1,1)
   (a,b) -> a ++ fib(b,a+b)</code></pre>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row my-5">
-                <div class="col mx-5">
-                    <h3>Quicksort</h3>
-                    <div class="row text-left">
-                        <div class="border rounded w-100 px-3 py-3 border-white" style="background-color:rgb(34, 34, 34)">
-                            <pre><code class="text-warning">[Num] quickSort = fn:
+            <div class="row my-5 ">
+                <div class="col mx-5 ">
+                    <h3 style="text-shadow: 2px 2px 2px black; ">Quicksort</h3>
+                    <div class="row text-left ">
+                        <div class="border rounded w-100 px-3 py-3 border-white " style="background-color:rgb(34, 34, 34) ">
+                            <pre><code class="text-warning ">[Num] quickSort = fn:
   [] -> []
   [Num] x:xs ->
     quickSort xs[fn: $ < x] ++ x ++ xs[fn: $ >= x]</code></pre>
                         </div>
                     </div>
                 </div>
-                <div class="col mx-5">
-                    <h3>Factorial Function</h3>
-                    <div class="row text-left">
-                        <div class="border rounded w-100 px-3 py-3 border-white" style="background-color:rgb(34, 34, 34)">
-                            <pre><code class="text-warning">factorial = fn:
+                <div class="col mx-5 ">
+                    <h3 style="text-shadow: 2px 2px 2px black; ">Factorial Function</h3>
+                    <div class="row text-left ">
+                        <div class="border rounded w-100 px-3 py-3 border-white " style="background-color:rgb(34, 34, 34) ">
+                            <pre><code class="text-warning ">factorial = fn:
   0 -> 1
   Int x | x > 0 -> x * factorial (x - 1)</code></pre>
                         </div>
@@ -122,35 +120,37 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="bg-light">
         <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <img src="Ben.jpg" class="w-50 h-50 border rounded border-dark"></img>
+            <h1 class="display-4 text-center">The Creators of Cuttlefish</h1>
+            <br />
+            <div class="row text-center ">
+                <div class="col ">
+                    <img src="Ben.jpg " class="w-50 h-50 border rounded border-dark "></img>
                     <h2>Ben Kern</h2>
-                    <p class="lead">Ben Kern is from Westlake Village, CA. He studied Physics and Computer Science at Loyola Marymount University, graduating in 2020.</p>
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-4"><a href="https://www.linkedin.com/in/benjamin-j-kern/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i
+                    <p class="lead ">Ben Kern is from Westlake Village, CA. He studied Physics and Computer Science at Loyola Marymount University, graduating in 2020.</p>
+                    <div class="container text-center ">
+                        <div class="row ">
+                            <div class="col-4 "><a href="https://www.linkedin.com/in/benjamin-j-kern/ " target="_blank "><i class="fa fa-linkedin " aria-hidden="true "></i
                       ></a></div>
-                            <div class="col"><a href="https://www.github.com/benjaminjkern" target="_blank"><i class="fa fa-github" aria-hidden="true"></i
+                            <div class="col "><a href="https://www.github.com/benjaminjkern " target="_blank "><i class="fa fa-github " aria-hidden="true "></i
                       ></a></div>
-                            <div class="col-4"><a href="mailto:bkern1@lion.lmu.edu?Subject=Hello" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i
+                            <div class="col-4 "><a href="mailto:bkern1@lion.lmu.edu?Subject=Hello " target="_top "><i class="fa fa-envelope " aria-hidden="true "></i
                       ></a></div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <img src="James.jpg" class="w-50 h-50 border rounded border-dark"></img>
+                <div class="col ">
+                    <img src="James.jpg " class="w-50 h-50 border rounded border-dark "></img>
                     <h2>James Crocker</h2>
-                    <p class="lead">James Crocker, Engineering Physics and CS at LMU (graduated top of his class)</p>
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-4"><a href="https://www.linkedin.com/in/james-b-crocker/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i
+                    <p class="lead ">James Crocker, Engineering Physics and CS at LMU (graduated top of his class)</p>
+                    <div class="container text-center ">
+                        <div class="row ">
+                            <div class="col-4 "><a href="https://www.linkedin.com/in/james-b-crocker/ " target="_blank "><i class="fa fa-linkedin " aria-hidden="true "></i
                     ></a></div>
-                            <div class="col"><a href="https://www.github.com/namesareapain" target="_blank"><i class="fa fa-github" aria-hidden="true"></i
+                            <div class="col "><a href="https://www.github.com/namesareapain " target="_blank "><i class="fa fa-github " aria-hidden="true "></i
                     ></a></div>
-                            <div class="col-4"><a href="mailto:jcrocke4@lion.lmu.edu?Subject=Hello" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i
+                            <div class="col-4 "><a href="mailto:jcrocke4@lion.lmu.edu?Subject=Hello " target="_top "><i class="fa fa-envelope " aria-hidden="true "></i
                     ></a></div>
                         </div>
                     </div>
@@ -160,22 +160,18 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Cuttlefish 2020</p>
-        </div>
-        <!-- /.container -->
-    </footer>
+    <div class="bg-dark text-muted" style="color:white; padding:1em;">Copyright &copy; Cuttlefish 2020</div>
+    <!-- /.container -->
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+    <script src="js/scrolling-nav.js "></script>
 
 </body>
 
