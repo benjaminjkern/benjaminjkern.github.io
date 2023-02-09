@@ -1,300 +1,108 @@
-@import "compass/css3";
-
-body,
-html {
-  height: 100%;
-  margin: 0;
+div {
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-  font: 20px "Lato";
+    background-image: url('/images/sunset.jpg');
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+#overlay {
+    display: block;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-h3 {
-  /*text-transform: uppercase;*/
-  font-weight: bold;
-  /*color: rgb(0, 191, 255);*/
+#home {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px black;
+    color: white;
 }
 
-img {
-  image-rendering: auto;
+h1 {
+    margin: 0;
 }
 
-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+#home img {
+    border-radius: 50%;
+    height: 175px;
+    width: auto;
+    margin: 30px;
 }
 
-.text-white {
-  color: white;
-}
-
-.blue-bg {
-  background-color: rgb(0, 43, 84);
-}
-
-.gray-bg {
-  background-color: #f5f5f5;
-}
-
-.btn {
-  background-color: rgb(255, 109, 223);
-  border-color: rgb(167, 71, 143);
-  margin-bottom: 30px;
-  color: white;
-}
-
-.btn:hover {
-  background-color: rgb(167, 71, 143);
-  border-color: white;
-  color: white;
-  cursor: pointer;
-}
-
-.full-page-image {
-  /* The image used */
-  background-image: url("../images/sunset.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.overlay {
-  display: block;
-  width: 100%;
-  background-color: black;
-  opacity: 0.3;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.center-page-caption {
-  position: absolute;
-  top: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.center-page-caption h1,
-.center-page-caption h2,
-.center-page-caption h3,
-.center-page-caption h4,
-.center-page-caption p {
-  color: white;
-}
-
-.fill {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  /*-o-background-size: cover;*/
-}
-
-.main-heading {
-  color: white;
-  font-size: 50px;
-}
-
-.small-heading {
-  color: white;
-  font-size: 17.25px;
-}
-
-.title {
-  color: white;
-  font-size: 40px;
-}
-
-.full-width {
-  width: 100%;
-}
-
-.home img {
-  height: 175px;
-  width: auto;
-  opacity: 1;
-  margin: 30px;
-}
-
-@media (max-width: 768px) {
-  .welcome {
-    font-size: 15px;
-  }
-
-  .main-heading {
+#home h1 {
     font-size: 50px;
-  }
+
 }
 
-.home {
-  text-shadow: 2px 2px 5px black;
+#home a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 52px;
+    width: 52px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
 }
 
-.home i {
-  height: 52px;
-  width: 52px;
-  padding: 10px;
-  font-size: 30px;
-  border-radius: 50%;
-  background-color: white;
-  color: black;
-  padding-bottom: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
+#links {
+    flex-direction: row;
 }
 
-.about img {
-  height: 175px;
-  width: auto;
-  margin: 30px;
+#fadeIn {
+    height: 75px;
+    background: linear-gradient(#0000, #222);
 }
 
-.progress {
-  background-color: rgb(105, 105, 105);
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20px;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -o-border-radius: 0;
+#about {
+    color: #a185c5;
+    text-align: center;
+    background-color: #222;
+    padding: 50px 0;
+    align-items: center;
 }
 
-.progress-bar {
-  line-height: 16px;
-  font-size: 114%;
-  text-align: left;
-  background-color: rgb(0, 191, 255);
+#about h1 {
+    margin-bottom: 10px;
 }
 
-.bar-text span {
-  padding: 40px 15px;
-}
+#about a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: #a185c5;
 
-.skills {
-  background-color: #f6f6f6;
-}
+    margin: 20px;
+    max-width: 200px;
+    width: 100%;
 
-.nav-tabs {
-  display: flex;
-}
-.nav-tabs li {
-  display: flex;
-  flex: 1;
-}
-
-.nav-tabs li a {
-  flex: 1;
-}
-
-.front-end-project {
-  padding-top: 40px;
-}
-
-.thumbnail {
-  padding: 0 0 15px 0;
-  border: none;
-  border-radius: 0;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.thumbnail p {
-  margin-top: 15px;
-  color: #555;
-}
-
-.square {
-  width: 100%;
-  padding-bottom: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-#data-algorithms .row,
-#other .row {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-/* stolen from Peter Hrynkow */
-
-.scroll-prompt {
-  position: absolute;
-  bottom: 25%;
-  left: 50%;
-  z-index: 100;
-  @include transition(1s opacity ease-out);
-}
-
-.scroll-prompt .scroll-prompt-shape {
-  position: relative;
-  @include animation(slidedown 2.25s infinite);
-}
-
-.scroll-prompt .scroll-prompt-shape:before,
-.scroll-prompt .scroll-prompt-shape:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 3em;
-  height: 0.5em;
-  top: 0;
-  left: 0;
-  background: rgb(255, 0, 0);
-  @include border-radius(0 0.25em 0.25em 0);
-  @include transform-origin(bottom, left);
-}
-
-.scroll-prompt .scroll-prompt-shape:before {
-  @include transform(scaleX(-1) rotate(-45deg));
-}
-.scroll-prompt .scroll-prompt-shape:after {
-  @include transform(rotate(-45deg));
-}
-
-@include keyframes(slidedown) {
-  0% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-    @include transform(translate(0, 80px));
-  }
-  100% {
-    opacity: 0;
-    @include transform(translate(0, 80px));
-  }
 }
