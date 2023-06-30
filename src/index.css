@@ -1,0 +1,29 @@
+body {
+    background-image: url("src/assets/sunset.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+}

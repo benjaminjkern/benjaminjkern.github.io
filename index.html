@@ -2,8 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="theme-color" content="#000000">
     <title>Hi, I'm Benjamin Kern.</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,42 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="index.css" />
 
-    <link rel="icon" href="images/favicon.jpg" type="image/jpg" sizes="32x32" />
+    <link rel="shortcut icon" href="src/assets/favicon.jpg" type="image/jpg" sizes="32x32">
 </head>
 
 <body>
-    <div id="overlay"></div>
-    <div id="home">
-        <img src="images/linkedInPic.jpg" />
-        <h1>
-            Benjamin Kern.
-        </h1>
-        <span>Nice to meet you.</span>
-
-        <div id="links">
-            <a href="https://www.linkedin.com/in/benjamin-j-kern/">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.github.com/benjaminjkern">
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-            <a href="mailto:benkern@pixelgate?Subject=Hi Ben, you seem cool">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-        </div>
-    </div>
-
-    <div id="fadeIn"></div>
-    <div id="about">
-        <h1>About Me</h1>
-        <span>LMU Computer Science and Physics '20.</span>
-        <span>I do projects having to do with those things.</span>
-        <a href="/resume">
-            RESUMÉ
-        </a>
-    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="/src/index.tsx" type="module"></script>
 </body>
 
 </html>
