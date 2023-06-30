@@ -33,7 +33,7 @@ const App = () => {
                         width: "auto",
                         margin: "30px",
                     }}
-                    src="src/assets/linkedInPic.jpg"
+                    src="/linkedInPic.jpg"
                     alt="Me"
                 />
                 <h1
